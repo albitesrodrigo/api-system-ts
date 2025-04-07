@@ -137,6 +137,8 @@ export default {
         "Belleza y cuidado personal": { min: 5, max: 200 },
         "Alimentos y bebidas": { min: 1, max: 100 },
       };
+      // Retorna el rango de precios según la categoría del producto
+      // Si la categoría no está definida, retorna un rango por defecto
       return ranges[this.product.category] || { min: 0, max: Infinity };
     },
     loadProduct() {
